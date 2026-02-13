@@ -17,7 +17,10 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: nginx:alpine  # Using nginx as a simple demo - replace with your built image
+        image: hashicorp/http-echo
+        args:
+          - "-text=Hello from Kubernetes"
+          - "-listen=:80"
         ports:
         - containerPort: 80
           name: http
