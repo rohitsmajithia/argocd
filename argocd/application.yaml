@@ -9,7 +9,7 @@ spec:
   project: default
   
   source:
-    repoURL: https://github.com/YOUR_USERNAME/argocd-demo-project  # Update this to your repo
+    repoURL: https://github.com/rohitsmajithia/argocd.git  # Update this to your repo
     targetRevision: HEAD
     path: k8s-manifests
   
